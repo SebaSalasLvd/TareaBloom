@@ -35,13 +35,11 @@ export const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">Pokémon Search</h1>
-      {/* Barra de búsqueda */}
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-red-500 via-gray-700 to-white p-4">
+      <h1 className="text-4xl font-serif text-white mb-4">Pokémon Search</h1>
       <SearchBar onPokemonSelect={handlePokemonSelect} />
-      {/* Mostrar el Pokémon seleccionado */}
       {selectedPokemon && pokemonInfo && (
-        <div className="mt-6 p-4 bg-white rounded-md shadow-md">
+        <div className="mt-6 p-4 bg-gray-300 rounded-md shadow-md">
           <div>
             <PokemonCard
               name={pokemonInfo.name}

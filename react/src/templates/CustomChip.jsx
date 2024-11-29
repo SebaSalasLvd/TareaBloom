@@ -17,7 +17,7 @@ export const CustomChip = ({ type }) => {
     ghost: "bg-indigo-700 text-white",
     dark: "bg-gray-900 text-white",
     dragon: "bg-purple-700 text-white",
-    steel: "bg-gray-400 text-black",
+    steel: "bg-gray-400 text-white",
     fairy: "bg-pink-300 text-black",
     normal: "bg-gray-300 text-black",
   };
@@ -27,7 +27,7 @@ export const CustomChip = ({ type }) => {
 
   return (
     <div>
-      <Chip className={`min-w-[6vw] h-10 px-4 text-sm roboto-medium line-clamp-1 text-center ${className}`}>
+      <Chip className={`min-w-[12vw] h-10 px-4 text-lg roboto-medium line-clamp-1 text-center ${className}`}>
         {capitalizeFirstLetter(type)}
       </Chip>
     </div>
