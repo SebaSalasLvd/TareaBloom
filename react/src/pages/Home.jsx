@@ -26,7 +26,7 @@ export const Home = () => {
       const types = response.data.types.map((typeInfo) => ({
         type: typeInfo.type.name,
       }));
-      const image = response.data.sprites.front_default;
+      const image = response.data.sprites.other["official-artwork"].front_default;
       setPokemonInfo({ name, types, image }); 
     } catch (error) {
       console.error("Error fetching Pokémon", error);

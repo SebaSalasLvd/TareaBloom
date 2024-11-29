@@ -1,5 +1,4 @@
-import { Chip } from '@nextui-org/react';
-
+import { CustomChip } from "../templates/CustomChip";
 export const PokemonCard = ({name, types, image}) => {
     return (
         <>
@@ -10,12 +9,10 @@ export const PokemonCard = ({name, types, image}) => {
                     <div className={'flex flex-col gap-2'}>
                         <div className="flex justify-start gap-2">
                             {types.map((data, idx) => (
-                                <Chip
-                                    key={idx}
-                                    className="min-w-[6vw] h-10 px-4 text-sm roboto-medium line-clamp-1 text-center text-white bg-warning-500"
-                                >
-                                    {data.type}
-                                </Chip>
+                                <CustomChip
+                                    key = {idx}
+                                    type = {data.type}
+                                />
                             ))}
                         </div>
                     </div>
