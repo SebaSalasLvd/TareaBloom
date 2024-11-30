@@ -1,5 +1,5 @@
 import { Chip } from "@nextui-org/react";
-import { PokemonTypeClasses } from "../components/PokemonTypeClasses";
+import { PokemonTypeClasses } from "../constants/PokemonTypeClasses";
 
 /**
  * CustomChip component that displays a styled chip with a Pokémon type.
