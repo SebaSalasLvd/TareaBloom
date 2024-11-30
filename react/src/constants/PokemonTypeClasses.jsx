@@ -1,3 +1,15 @@
+/**
+ * A mapping of Pokémon types to corresponding CSS classes for styling.
+ * Each type is associated with a background color and text color used in the UI.
+ * The values are used to dynamically apply styles to elements representing Pokémon types.
+ * 
+ * @constant
+ * @type {Object<string, string>}
+ * @example
+ * // Usage in a component
+ * <div className={PokemonTypeClasses.fire}>Fire Type</div>
+ * 
+ */
 export const PokemonTypeClasses = {
     fire: "bg-red-500 text-white",
     water: "bg-blue-500 text-white",

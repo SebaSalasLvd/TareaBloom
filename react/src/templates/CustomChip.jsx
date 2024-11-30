@@ -30,7 +30,7 @@ export const CustomChip = ({ type }) => {
    * @type {string}
    */
   const className = pokemonTypeClasses[type] || "bg-gray-200 text-black";
-
+  
   /**
    * Capitalizes the first letter of a string.
    * 
