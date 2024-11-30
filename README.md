@@ -2,6 +2,8 @@
 
 This is a React-based project developed for interacting with the PokeApi.
 
+## Author: Sebastián Salas Lavado
+
 ## Setup Instructions
 
 Follow these steps to get started with the project:
